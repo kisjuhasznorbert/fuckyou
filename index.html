@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>i mean fuck you</title>
     <style>
+
+
        body {
             display: flex;
+	    flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
@@ -64,18 +67,43 @@
 	transform: rotate(180deg);
 	}
 
+@media (max-width: 768px) {
+
+    body {
+        font-size: 5rem; /* Kisebb betűméret mobilon */
+        text-align: center;
+    }
+
+ img {
+        position: relative;
+        left: -30px; /* Balra tolja a képet */
+    }
+
+    .background-image {
+        width: 200px; /* Kisebb kép mobilon */
+        left: 26%;
+	top:73%;
+        opacity: 0.7; /* Kicsit halványabb háttér */
+    }
+
+    .offended-text {
+        font-size: 12px; /* Kisebb szöveg mobilon */
+    }
+}
+
+
     </style>
 </head>
 <body>
 
-  <div class="tezt">Fuck you.</div>
+  <div class="text">Fuck you.</div>
 
 <a href="https://www.instagram.com/kis.juhasz.norbert/">
 
   <img src="kjn.png" alt="kisjuhasz" class="background-image"> 
 
 </a>
-<p class="offended-text">if you feel offended click 
+<p class="offended-text">if you feel offended<br>click 
 <a href="https://youtu.be/yUusdSQ7Ya8?si=5FOgWJ9Ug7UMjxgl">here</a>
 </p>
 <a href="https://youtu.be/qq3NOnr5trY?si=lkdxSjqr2jug0Lh7">
